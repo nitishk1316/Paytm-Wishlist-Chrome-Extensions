@@ -1,0 +1,133 @@
+#nks-fixed-button {
+    position: fixed;
+    top: 250px;
+    left: 0px; 
+    
+    width: 60px;
+    height: 55px;
+    background-color: #002e6e;
+}
+
+#nks-pro-list {
+    max-height: 270px;
+    min-height: 100px;
+    overflow: auto;
+}
+#nks-pro-list li {
+	border-bottom: 2px solid #eee;
+	padding: 5px 0;
+	font: 12px Arial,Helvetica,sans-serif;
+}
+
+.nks-media-body {
+	display: table-cell;
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+.nks-media-body img {
+	width: 48px;
+	height: 48px;
+    border: 1px solid #deeaee;
+}
+.nks-media-body.first {
+	width: 50px;
+}
+.nks-media-body.second {
+	width: 200px;
+}
+.nks-media-body.third {
+	width: 20px;
+    text-align: right;
+}
+.nks-media-body a {
+    font-family: 'Open sans';
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+.nks-wishlist-header {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+
+/* floating box style */
+.nks-floating-form { /*contact form wrapper*/
+	    width: 300px;
+	    max-width: 300px;
+	    max-height: 300px;
+	    padding: 10px 10px 10px 30px;
+	    border: 1px solid #ddd;
+	    position: fixed; /*Form position fixed*/
+	    top: 200px;
+	    background: #F9F9F9;
+	    border: 1px solid #ddd;
+	    -webkit-box-shadow: -2px 0 8px rgba(43,33,33,.06);
+    }
+.nks-contact-opener { /*opener button*/
+    position: absolute;
+    left: -86px;
+    transform: rotate(-90deg); /* rotate button -90deg */
+    top: 36px;
+    padding: 9px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+    cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
+
+    background: linear-gradient(to bottom,#2D77A2 5%,#337DA8 100%);
+    background-color: #28739E;
+    box-shadow: inset 0 1px 0 0 #3985B1;
+    display: inline-block;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial,Helvetica,sans-serif;
+}
+
+
+.nks-heart-shape{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+   /* background-color: rgba(250,184,66, 1);*/
+   background-color: #fff;
+        margin-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.nks-heart-shape:before,
+.nks-heart-shape:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    /*background-color: rgba(250,184,66, 1);*/
+    background-color: #fff;
+}
+.nks-heart-shape:before{
+    bottom: 0px;
+    left: -15px;
+}
+.nks-heart-shape:after{
+    top: -15px;
+    right: 0px;
+}
+
+.nks-heart-shape.active,
+.nks-heart-shape.active:before,
+.nks-heart-shape.active:after {
+    /*background-color: rgba(250,184,66, 1);*/
+    background-color: #F5A623;
+}
